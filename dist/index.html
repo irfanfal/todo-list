@@ -6,7 +6,85 @@
     <title>Todo List</title>
 </head>
 <body>
-    <p>TODO LIST</p>
+    <div class="container">
+        <div class="top-nav">
+            <div class="left-nav">
+                <button class="button"><img src="img/view-sequential.svg"></button>
+                <button class="button home"> <img src="img/home-account.svg"> </button>
+            </div>
+
+            <div class="right-nav">
+                <button class="button add"><img src="img/plus.svg"></button>
+            </div>
+        </div>
+
+        <div class="bottom-nav">
+            <div class="sidebar">
+                <div>Inbox</div>
+                <div>Today</div>
+                <div>Projects</div>
+
+
+            </div>
+
+            <div class="form-container">
+                <form class="form">
+                    <div class="form-header">
+                        <div>Task Baru</div>
+                    </div>
+
+                    <div class="form-content">
+                        <div class="left-form">
+                            <div class="form-input">
+                            <label for="judul">Judul</label>
+                            <input type="text" id="judul" required>
+                            </div> 
+                            
+                            <div class="form-input">
+                            <label for="deskripsi">Deskripsi</label>
+                            <textarea id="deskripsi" name="deskripsi" rows="10" cols="50">test</textarea>
+
+
+
+                            </div>
+                        </div>
+
+                        <div class="right-form">
+                            <div class="form-input">
+                            <label for="tanggal">Tanggal</label>
+                            <input type="date" id="tanggal" required>
+                            </div>
+
+                    
+                            <div class="form-input">
+                            <label for="prioritas">Prioritas</label>
+                            <select id="prioritas" name="prioritas" required>
+                            <option value="rendah">Rendah</option>
+                            <option value="sedang">Sedang</option>
+                            <option value="tinggi">Tinggi</option>
+                            </select>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-button">
+                        <button>Tutup</button>
+                        <button type="submit">Tambah</button>
+                    </div>
+
+
+                </form>
+            </div>
+
+            <div class="content">
+                <div>Content placeholder</div>
+            </div>
+
+        </div>
+
+
+
+    </div>
     <script src="main.js"></script>
     
 </body>
