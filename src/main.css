@@ -1,3 +1,97 @@
-body {
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    
+}
+
+.top-nav{
+    display: flex;
+    background-color: blue;
+    padding: 10px;
+    justify-content: space-between;
+}
+
+.bottom-nav{
+    display: flex;
+}
+
+.sidebar{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    box-sizing: border-box;
+    border: 1px solid black;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 10px;
+}
+
+.form-container{
+    display: flex;
+    background-color: white;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.form-header{
+    padding: 20px;
+    border-bottom: 1px solid grey;
+}
+
+
+.form-content{
+    display: flex; 
+    padding: 20px;
+    gap: 10px;
+}
+
+
+.form-input{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.form-button{
+    display: flex;
+    
+    gap: 10px;
+    align-items: flex-end;
+    justify-content: flex-end;
+    margin-bottom: 20px;
+    margin-right: 20px;
+}
+
+.form-button > button{
+    padding: 10px 20px;
     background-color: red;
+}
+
+textarea{
+    resize: vertical;
+}
+
+
+.home{
+    background-color: black;
+}
+
+.button{
+    background-color: red;
+}
+
+
+img{
+    width: 20px;
+    height: 20px;
 }
